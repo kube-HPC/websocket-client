@@ -3,8 +3,8 @@ import sys
 from setuptools import setup
 import pkg_resources
 
-VERSION = "0.56.0"
-NAME = "websocket_client"
+VERSION = "0.56.1"
+NAME = "hkube_websocket_client"
 
 install_requires = ["six"]
 tests_require = []
@@ -38,12 +38,12 @@ except Exception:
 setup(
     name=NAME,
     version=VERSION,
-    description="WebSocket client for Python. hybi13 is supported.",
+    description="Fork of WebSocket client for Python. Fixes send performance issues with large data payload",
     long_description=open("README.rst").read(),
-    author="liris",
+    author="liris/hkube",
     author_email="liris.pp@gmail.com",
     license="BSD",
-    url="https://github.com/websocket-client/websocket-client.git",
+    url="https://github.com/kube-HPC/websocket-client.git",
     python_requires='>=2.6, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*',
     classifiers=[
         "Development Status :: 4 - Beta",
